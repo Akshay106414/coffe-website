@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu </title>
+  <link rel="stylesheet" href="image.css">
+</head>
+
+<body>
+  <div class="containAer">
+    <nav>
+      <div>
+        <img src="./hot-beverages.png" alt="all" head="20px" width="20px" class="ab-img">
+        <a href="Home.html" class="link">Coffee</a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      </div>
+      <article  class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="image.html">Menu</a>
+        <a href="testimonials.html">Testimoniois</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        <a href="book.html">Book Now</a>
+      </article>
+    </nav>
+  </div>
+  <div class="item">
+    <img src="hot-beverages.png" alt="">
+    <h3>Hot Beverages</h3>
+    <p>wide ronge of steaming hot coffree to make you fresh and light.</p>
+  </div>
+
+  <div class="item">
+    <img src="cold-beverages.png" alt="">
+    <h3>Cold Beverages</h3>
+    <p>Creamy and frothy cold coffee to make you cool.</p>
+  </div><br>
+
+  <div class="item">
+    <img src="refreshment.png" alt="">
+    <h3>Refreshment</h3>
+    <p>Fruit and icy refreshing drink to make feel refresh.</p>
+
+  </div>
+  <div class="item">
+
+    <img src="special-combo.png" alt="">
+    <h3>Special combos</h3>
+    <p>Your favorite eating and drinking combations.</p>
+  </div>
+
+  <div class="item">
+
+    <img src="desserts.png" alt="">
+    <h3>Dessert</h3>
+    <p>Satiate your palate and take you an a culinary treat.</p>
+  </div>
+
+  <div class="item">
+    <img src="burger-frenchfries.png" alt="">
+    <h3>Burger & French Frich</h3>
+    <p>Quick bites to satisty your small sizo hunger.</p>
+
+  </div>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>

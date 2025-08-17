@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* About page */
+.about {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+p{
+    font-size: 1.3rem;
+}
+.about-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 140px;
+    margin-left: 100px;
+}
+
+.contain {
+    align-items: center;
+    margin-left: 100px;
+}
+
+.ab-us {
+    margin-left: 100px;
+    margin-top: 140px;
+    font-size: 3.5rem;
+}
+
+.img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.icon {
+    gap: 250px;
+    margin-left: 70px;
+}
+
+i{
+    margin-top: 10px;
+    gap: 20px;
+}
+
+i:hover {
+    color: orange;
+}
+
+
+/* Book  Table Css */
+
+.b-input {
+    height: 30px;
+    width: 220px;
+    color: black;
+    /* margin-top: 150px; */
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-left: 80px;
+    padding-left: 10px;
+}
+
+.book{
+    margin-top: 80px;
+    height: 10px;
+    /* background-color:rgb(227, 173, 154); */
+    background-color: burlywood;
+    height:420px;
+    width: 380px;
+    border:1px solid rgb(115, 110, 110);
+    border-radius: 30px;
+    margin-left: 620px;
+}
+
+
+.label{
+    display: flex;
+    gap: 20px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.btn:hover{
+     color: wheat;
+     background-color: rgb(219, 84, 224);
+     cursor: pointer;
+}
+
+.b-input:hover{
+    border: 2px solid burlywood;
+}
+
+.btn{
+    height: 40px;
+    width: 90px;
+    /* color: brown; */
+    border-radius: 20px;
+    font-size: 1rem;
+    gap: 50px;
+    margin-left: 80px;
+    color: black;
+}
+
+.book-body{
+    margin: 0;
+    padding: 0;
+    background-image: url("hotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 84vh;
+}
+
+/* NavBar */
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav{
+    /* background-color: brown; */
+    height: 50px;
+    width: 300vh;
+}
+
+article{
+     height: 40px;
+    width: 70%;
+    text-decoration:none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-left: auto;
+}
+
+a{
+    justify-content: space-around;
+   text-decoration: none;
+   color: black;
+   justify-content: space-around;
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.ab-img{
+    margin-top: 15px;
+    margin-left: 7px;
+}
+
+.link{
+    margin-left: 20px;
+}
+
+a:hover{
+    color: rgb(244, 196, 106);
+}
+
+/* responsive  code */
+/* Responsive Design */
+/* Mobile navbar toggle button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* Navbar header container */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Nav links container */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Show nav links on toggle */
+.nav-links.show {
+  display: flex;
+}
+
+/* Responsive Design Enhancements */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .link {
+    margin-right: 0;
+  }
+
+  a {
+    margin-bottom: 10px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    margin: 40px auto 0;
+    height: auto;
+    width: 90%;
+  }
+
+  .contain {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .ab-us {
+    margin: 20px auto;
+    font-size: 2rem;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+  }
+
+  .book {
+    margin: 40px auto;
+    width: 90%;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .img, .about-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .b-input, .btn {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .gallery img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    margin-top: 10px;
+  }
+
+  .ab-us {
+    font-size: 1.8rem;
+  }
+
+  .icon {
+    gap: 15px;
+  }
+
+  .b-input, .btn {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

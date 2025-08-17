@@ -1,0 +1,190 @@
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fff;
+      padding: 0px;
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+    .gallery {
+      display: flex;
+      /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+      gap: 20px;
+      max-width: 10000px;
+      max-height: 1000px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 150%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      /* box-shadow: 0 4px 8px rgba(0,0,0,0.1) */
+     
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* navbar */
+    .container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav{
+    /* background-color: brown; */
+    height: 50px;
+    width: 300vh;
+}
+
+article{
+     height: 40px;
+    width: 70%;
+    text-decoration:none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+a{
+    justify-content: space-around;
+   text-decoration: none;
+   color: black;
+   justify-content: space-around;
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.ab-img{
+    margin-top: 15px;
+    margin-left: 7px;
+}
+
+.link{
+    margin-right: 1000px;
+}
+
+a:hover{
+    color: rgb(244, 196, 106);
+}
+
+
+/* responsive */
+/* Responsive Design */
+/* Mobile navbar toggle button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* Navbar header container */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Nav links container */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Show nav links on toggle */
+.nav-links.show {
+  display: flex;
+}
+
+/* Responsive Design Enhancements */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .link {
+    margin-right: 0;
+  }
+
+  a {
+    margin-bottom: 10px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .gallery img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    margin-top: 10px;
+  }
+}

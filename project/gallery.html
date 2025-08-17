@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div>
+                <img src="hot-beverages.png" alt="all" head="20px" width="20px" class="ab-img">
+                <a href="Home.html" class="link">Coffee</a>
+                  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            </div>
+            <article class="nav-links">
+                <a href="Home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="image.html">Menu</a>
+                <a href="testimonials.html">Testimoniois</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="Contact.html">Contact</a>
+                <a href="book.html">Book Now</a>
+            </article>
+        </nav>
+    </div>
+    <h2>GALLERY</h2>
+    <div class="gallery">
+        <img src="gallery-1.jpg" alt="Coffee">
+        <img src="gallery-2.jpg" alt="Breakfast">
+        <img src="gallery-3.jpg" alt="Smoothies">
+    </div>
+    <div class="gallery">
+        <img src="gallery-4.jpg" alt="Heart Toast">
+        <img src="gallery-5.jpg" alt="Dosa">
+        <img src="gallery-6.jpg" alt="Coffee and Croissant">
+    </div>
+     <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('show');
+    }
+  </script>
+
+</body>
+
+</html>
